@@ -1,0 +1,167 @@
+﻿/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+    background-color: transparent;
+    color: #333;
+}
+
+body {
+    background-image: url('asset/laundry.jpg'); /* Path ke gambar background */
+    background-size: cover; /* Gambar memenuhi seluruh area */
+    background-repeat: no-repeat; /* Mencegah pengulangan */
+    background-attachment: fixed; /* Background tetap saat di-scroll */
+    background-position: center; /* Gambar diposisikan di tengah */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    }
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+}
+
+header .logo img {
+    height: 35px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: text-decoration 0.3s;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Kontainer utama */
+.container {
+    flex: 1;
+    max-width: 900px;
+    margin: auto;
+    padding: 1rem;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 90%;
+}
+
+/* Heading */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+/* Bagian untuk section.view-laundry */
+.view-laundry {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Wrapper tombol */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Tombol */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Welcome Container */
+.welcome-container {
+    max-width: 800px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.welcome-container h1 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.welcome-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+.welcome-container p span {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .welcome-container {
+        padding: 20px;
+    }
+
+    .welcome-container h1 {
+        font-size: 24px;
+    }
+
+    .welcome-container p {
+        font-size: 16px;
+    }
+}
